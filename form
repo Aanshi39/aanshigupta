@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+       function d(){
+        let a = document.getElementById("name").value;
+        let b = document.getElementById("num1").value;
+        let c = document.getElementById("email").value;
+
+        let obj = {
+            name: a,
+            num : b,
+            email: c
+        }
+
+        alert(`name: ${obj.name}, num: ${obj.num}, emial: ${obj.email}`);
+        return false;
+       }
+    </script>
+</head>
+<body>
+    <form onsubmit="d()">
+        <input type="text" name="name" id="name" placeholder="name..."/><br>
+        <input type="number" name="number" id="num1" placeholder="num..."/><br>
+        <input type="email" name="email" id="email" placeholder="email..."/><br>
+        <button> click Here</button>
+    </form>
+    
+</body>
+</html>    
